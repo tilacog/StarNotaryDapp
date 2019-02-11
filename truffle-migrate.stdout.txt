@@ -1,0 +1,155 @@
+Truffle Develop started at http://127.0.0.1:9545/
+
+Accounts:
+(0) 0xdd57149139de1c4c6745f1f0218e80a82448cc44
+(1) 0x18f5a65bdc6048e69ab4010a7bd0ed873f38263e
+(2) 0xae536b7bc3954a33952e3951821988a25e6c82ea
+(3) 0x22fc588cb02fa7e065e3fa27dc35bc62de47542d
+(4) 0x21d6f75b6eac0ee87cef3c4dada9f27aa58abd2f
+(5) 0xa624945730d8fdb3e05c9671ffb734e040d41267
+(6) 0xd7b4b44df3a64c479eea483a847190fabe38d93f
+(7) 0x6be902b5f59135a58c4e94e6d079c1e69cf7a068
+(8) 0x3d44cfe27fa8ae9095a324e2952c70b1df8a4ce3
+(9) 0x94eaf7bc76febd7e94bb188c2bd9a4d38a587608
+
+Private Keys:
+(0) ff242a49c79e9bb1d1a3a07a5f986e3cf34716ebfbf3706db96ca9a6644870ba
+(1) 3b138d406901c2e02b0bc67fd4535d6e140ab3ad2ec9051e1f4abdaead39e31f
+(2) 19f856228f09bb6036524915250284ba3294737f1ef232918bdbd7e481fae062
+(3) 32c064f37a23e79b3a750d1f365ca9a5e9c26ab4ed22c693b7d0cf6586537a2d
+(4) f3c68605e58952b7206906262295b0ec866fcd453b6e8442dd33e61eb0155bec
+(5) e56162932efd991d0716d96f9ecc8b77d5a0165417ea6ccf5ab13f1f0ac21e8c
+(6) d6bba51e780104362d5b0c15b59b2bfcf0bc135c1a9aefac60c0421329f336fc
+(7) 4a6637b2101b037e0be7817cbe9b2e4dbf5f656e0978062ea35af0a3df03faf1
+(8) 8c5f8de415b9a95083dc81d72e1993309d8524315ed7e6bfa1c6870acd236d82
+(9) 6de4d2d279238afcac4b4a78c694ebae38842dbbc2535c05b580fe8e9111e01f
+
+Mnemonic: negative anchor hold negative hood gap piano island hundred harvest close kingdom
+
+⚠ Important ⚠ : This mnemonic was created for you by Truffle. It is not secure.
+Ensure you do not use it on production blockchains, or else you risk losing funds.
+
+truffle(develop)> truffle migrate --network rinkeby --reset --compile-all
+evalmachine.<anonymous>:0
+truffle migrate --network rinkeby --reset --compile-all
+        ^^^^^^^
+
+SyntaxError: Unexpected identifier
+
+truffle(develop)> migrate --network rinkeby --reset --compile-all
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/StarNotary.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/introspection/ERC165.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/introspection/IERC165.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol...
+Compiling ./node_modules/openzeppelin-solidity/contracts/utils/Address.sol...
+Writing artifacts to ./build/contracts
+
+⚠ Important ⚠
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 7046184
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > account:             0x9562466b42E68E3C4c0aBbf087B77d77740DAf13
+   > balance:             2.99730092
+   > gas used:            269908
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00269908 ETH
+
+   -------------------------------------
+   > Total cost:          0.00269908 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > account:             0x9562466b42E68E3C4c0aBbf087B77d77740DAf13
+   > balance:             2.97516738
+   > gas used:            2213354
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02213354 ETH
+
+   -------------------------------------
+   > Total cost:          0.02213354 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02483262 ETH
+
+⚠️  Important ⚠️
+If you're using an HDWalletProvider, it must be Web3 1.0 enabled or your migration will hang.
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 7048023
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x27088ebf783ad3b75df6379cb11c57ef8668b86a6ef21894a2d6e6a1d98cf3f3
+   > Blocks: 3            Seconds: 34
+   > contract address:    0xBf02320B296a1BB20d9A25b06902b189d61dE257
+   > account:             0x9562466b42E68E3C4c0aBbf087B77d77740DAf13
+   > balance:             2.99715092
+   > gas used:            284908
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00284908 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00284908 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StarNotary'
+   ----------------------
+   > transaction hash:    0x22a530ee0a597421a5d9ee2440251b69675b4652d4054211b47aa2fa3f1a9e36
+   > Blocks: 2            Seconds: 33
+   > contract address:    0x28C240Bc09de902ca3A17AdEE768E55a4C3599d7
+   > account:             0x9562466b42E68E3C4c0aBbf087B77d77740DAf13
+   > balance:             2.97471738
+   > gas used:            2243354
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02243354 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.02243354 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.02528262 ETH
+
+truffle(develop)>

@@ -1,3 +1,8 @@
+const HDWalletProvider = require("truffle-hdwallet-provider");
+
+const secretPhrase = 'since local try tackle transfer bunker mesh subject worry ecology unlock spin'
+const infuraEndpoint = 'https://rinkeby.infura.io/v3/e9137c3350c54383a2c8d79c5ef9a3b5'
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -52,6 +57,13 @@ module.exports = {
             network_id: "*",       // Any network (default: none)
         },
 
+	rinkeby: {
+	    host: 'localhost',
+	    provider: () =>  new HDWalletProvider(secretPhrase , infuraEndpoint),
+	    network_id: 4,
+	    gas: 6700000,
+	    gasPrice : 10000000000,
+	}
         // Another network with more advanced options...
         // advanced: {
         // port: 8777,             // Custom port

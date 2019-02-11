@@ -13,15 +13,17 @@ contract StarNotary is ERC721 {
 
     // Implement Task 1 Add a name and symbol properties
     // name: Is a short name to your token
+    string public constant name = "TiagoStar";
     // symbol: Is a short string like 'USD' -> 'American Dollar'
-    
+    string public constant symbol = "TIS";
+
 
     // mapping the Star with the Owner Address
     mapping(uint256 => Star) public tokenIdToStarInfo;
     // mapping the TokenId and price
     mapping(uint256 => uint256) public starsForSale;
 
-    
+
     // Create Star using the Struct
     function createStar(string memory _name, uint256 _tokenId) public { // Passing the name and tokenId as a parameters
         Star memory newStar = Star(_name); // Star is an struct so we are creating a new Star
